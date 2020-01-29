@@ -29,7 +29,8 @@ public class CardDeliveryTest {
         }
         c.add(Calendar.DATE, 2);
         dt = sdf.format(c.getTime());
-        $("#root > div > form > fieldset > div:nth-child(2) > span > span > span > span > span.input__box > input").setValue(dt);
+        $("[pattern='[0-9.]*']").doubleClick();
+        $("[pattern='[0-9.]*']").setValue(dt);
         $("[name='name']").setValue("Иванов Иван");
         $("[name='phone']").setValue("+79123456789");
         $(".checkbox__box").click();
