@@ -43,10 +43,10 @@ public class CardDeliveryTest {
         $(withText("Успешно")).waitUntil(visible,15000);
     }
 
-    @Test
-    void shouldAutoFillCity(){
-        open("http://localhost:9999/");
-        $("[placeholder]").setValue("аб");
-        $(".menu-item__control").find("Хабаровск");
+    //@Test
+    //void shouldAutoFillCity(){
+    //    open("http://localhost:9999/");
+    //    $("[placeholder]").setValue("аб");
+    //    $(".menu-item__control").find("Хабаровск");
     }
 }
