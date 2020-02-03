@@ -16,7 +16,7 @@ public class CardDeliveryTest {
     @Test
     void shouldSumbitRequest() {
         open("http://localhost:9999/");
-        $("[placeholder]").setValue("Уфа");
+        $("#root > div > form > fieldset > div:nth-child(1) > div > span > span > span.input__box > input").setValue("Уфа");
         Date date = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
         String dt = sdf.format(date);
